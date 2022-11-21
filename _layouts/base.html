@@ -1,0 +1,68 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ site.name }} | {{ page.title }}{% endif %}</title>
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="{{ site.title }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ site.title }}" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+
+  <!-- Bootstrap & MDB -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4/css/mdb.lite.min.css" crossorigin="anonymous" />
+
+  <!-- Fonts & Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/roboto/index.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/b612-mono/index.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" crossorigin="anonymous">
+
+  <!-- Styles -->
+  {% if page.abbr %}{% assign scss = page.abbr %}{% else %}{% assign scss = page.title %}{% endif %}
+  {% capture style %}{% include {{ scss | downcase | prepend: 'styles/' | append: '.scss' }} %}{% endcapture %}
+  <style>{{ style | scssify }}</style>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="{{ '/lib/img/favicon.ico' | relative_url }}">
+</head>
+
+<body>
+  <!-- Header -->
+  {% include header.html %}
+
+  <!-- Content -->
+  {% include content.html %}
+
+  <!-- Footer -->
+  {% include footer.html %}
+</body>
+
+<!-- jQuery -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js" crossorigin="anonymous"></script>
+
+<!-- Bootsrap & MDB scripts -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4/js/mdb.min.js" crossorigin="anonymous"></script>
+
+<!-- Mansory & imagesLoaded -->
+<script src="https://cdn.jsdelivr.net/npm/masonry-layout@4/dist/masonry.pkgd.min.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/imagesloaded@4/imagesloaded.pkgd.min.js" crossorigin="anonymous"></script>
+
+<!-- Custom -->
+<script src="{{ '/lib/script/mansory.min.js' | relative_url }}"></script>
+<script src="{{ '/lib/script/common.min.js' | relative_url }}"></script>
+
+</html>

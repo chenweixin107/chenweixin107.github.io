@@ -28,11 +28,21 @@ layout: default
               class=profile_image_class
               alt=page.profile.image -%}
             {% endif -%}
-            {%- if page.profile.address %}
-            <div class="address">
+            <!-- {%- if page.profile.address %} -->
+        <!--     <div class="address">
               {{ page.profile.address }}
+            </div> -->
+            <div class="social">
+              <span class="social-icon text-center">
+                <a href="mailto:{{chenwx20@mails.tsinghua.edu.cn}}" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://scholar.google.com/citations?user={{ site.google_scholar }}" target="_blank" title="Google Scholar"><i class="fab fa-google"></i></a>
+                <a href="https://github.com/{{ site.github }}" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+              </span>
             </div>
-            {%- endif %}
+            
+          </div>
+
+            <!-- {%- endif %} -->
           </div>
           {%- endif %}
 
