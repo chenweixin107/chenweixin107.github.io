@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: Graduate Student @ Tsinghua University
+subtitle: First-year PhD Student @ UIUC
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: prof_pic2.jpg
   image_circular: false # crops the image to make it circular
   address: >
     <p>📧 Email</p>
@@ -25,9 +25,10 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
 
  -->
-I am a third-year graduate student (GPA: 4.0/4.0, Rank: 1) at [Division of Information Science and Technology](https://www.sigs.tsinghua.edu.cn/en/faculty_list/list.htm?key=), [Tsinghua Shenzhen International Graduate School](https://www.sigs.tsinghua.edu.cn/en/), [Tsinghua University](https://www.tsinghua.edu.cn/en/), advised by Prof. [Haoqian Wang](https://www.sigs.tsinghua.edu.cn/whq_en/main.htm).
-I am also a research intern at [Secure Learning Lab](https://aisecure.github.io/), [UIUC](https://illinois.edu/), advised by Prof. [Bo Li](https://aisecure.github.io/) and was a research intern at [SCLBD](http://scl.sribd.cn/index.html), [CUHK-Shenzhen](https://www.cuhk.edu.cn/en), advised by Prof. [Baoyuan Wu](https://sites.google.com/site/baoyuanwu2015/).
-Before that, I obtained my B.S. degree (GPA: 4.0/4.0, Rank: 1) in Information and Computing Science from [School of Mathematics (Zhuhai)](https://mathzh.sysu.edu.cn/en), [Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/).
+I am a first-year PhD student in Computer Science at [University of Illinois at Urbana-Champaign](https://cs.illinois.edu/), advised by Prof. [Bo Li](https://aisecure.github.io/).
 
-My research interest lies in trustworthy AI, especially backdoor attacks and defenses in deep learning.
-My long-term goal is to make machine learning algorithms robust and interpretable.
+Before that, I obtained my M.E. degree (GPA: 4.0/4.0, Rank: 1) in Artificial Intelligence from [Tsinghua University](https://www.tsinghua.edu.cn/en/) and B.S. degree (GPA: 4.0/4.0, Rank: 1) in Information and Computing Science from [Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/).
+I did research internship at [SCLBD](http://scl.sribd.cn/index.html), [CUHK-Shenzhen](https://www.cuhk.edu.cn/en), advised by Prof. [Baoyuan Wu](https://sites.google.com/site/baoyuanwu2015/).
+
+My research interest lies in trustworthy AI and adversarial machine learning.
+My long-term goal is to make machine learning algorithms robust, generalizable and interpretable.
