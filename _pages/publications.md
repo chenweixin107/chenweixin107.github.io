@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: publications
-description: Please refer to [my Google Scholar](https://scholar.google.com/citations?hl=en&user=ZlBEHxwAAAAJ) for a complete publication list.
+description: Please refer to <a href="https://scholar.google.com/citations?hl=en&user=ZlBEHxwAAAAJ">my Google Scholar</a> for a complete publication list.
 years: [2022, 2023]
 nav: true
 nav_order: 1
