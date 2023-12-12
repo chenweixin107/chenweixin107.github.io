@@ -25,7 +25,7 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
 
  -->
-I am a first-year PhD student in Computer Science at [University of Illinois at Urbana-Champaign](https://cs.illinois.edu/).
+I am a first-year PhD student in Computer Science at [University of Illinois at Urbana-Champaign](https://cs.illinois.edu/), advised by Prof. [Han Zhao](https://hanzhaoml.github.io/).
 
 Before that, I obtained my M.E. degree (GPA: 4.0/4.0, Rank: 1) in Artificial Intelligence from [Tsinghua University](https://www.tsinghua.edu.cn/en/) and B.S. degree (GPA: 4.0/4.0, Rank: 1) in Information and Computing Science from [Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/).
 I did research internship at [SCLBD](http://scl.sribd.cn/index.html), [CUHK-Shenzhen](https://www.cuhk.edu.cn/en), advised by Prof. [Baoyuan Wu](https://sites.google.com/site/baoyuanwu2015/).
