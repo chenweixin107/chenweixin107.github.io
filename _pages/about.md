@@ -27,8 +27,7 @@ Link to your social media connections, too. This theme is set up to use [Font Aw
  -->
 I am a second-year PhD student in Computer Science at [University of Illinois at Urbana-Champaign](https://cs.illinois.edu/), advised by Prof. [Han Zhao](https://hanzhaoml.github.io/).
 
-Before that, I obtained my M.E. degree (GPA: 4.0/4.0, Rank: 1) in Artificial Intelligence from [Tsinghua University](https://www.tsinghua.edu.cn/en/) and B.S. degree (GPA: 4.0/4.0, Rank: 1) in Mathematics from [Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/).
+Before that, I obtained my M.E. degree in Artificial Intelligence from [Tsinghua University](https://www.tsinghua.edu.cn/en/) and B.S. degree in Mathematics from [Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/).
 I was a research intern at [CUHK-Shenzhen](https://www.cuhk.edu.cn/en), advised by Prof. [Baoyuan Wu](https://sites.google.com/site/baoyuanwu2015/).
 
-My research interest lies in trustworthy AI, trustworthy LLMs and adversarial machine learning.
-My long-term goal is to make machine learning algorithms robust, generalizable and interpretable.
+My research interests lie in trustworthy machine learning (interpretability, robustness, generalization) and trustworthy LLMs (truthfulness, reasoning).
