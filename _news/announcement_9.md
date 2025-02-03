@@ -1,6 +1,6 @@
 ---
 layout: post
-date: 2024-05 00:00:00-0400
+date: 2024-05
 inline: true
 ---
 
