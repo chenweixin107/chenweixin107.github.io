@@ -25,9 +25,10 @@ Put your address / P.O. box / other info right below your picture. You can also 
 Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
 
  -->
-I am a second-year PhD student in Computer Science at [University of Illinois at Urbana-Champaign](https://cs.illinois.edu/), advised by Prof. [Han Zhao](https://hanzhaoml.github.io/).
+I am a second-year PhD student in Computer Science at [University of Illinois Urbana-Champaign](https://cs.illinois.edu/), advised by Prof. [Han Zhao](https://hanzhaoml.github.io/).
 
 Before that, I obtained my M.E. degree in Artificial Intelligence from [Tsinghua University](https://www.tsinghua.edu.cn/en/) and B.S. degree in Mathematics from [Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/).
 I was a research intern at [CUHK-Shenzhen](https://www.cuhk.edu.cn/en) (advised by Prof. [Baoyuan Wu](https://sites.google.com/site/baoyuanwu2015/)) and at [UIUC](https://cs.illinois.edu/) (advised by Prof. [Bo Li](https://aisecure.github.io/)).
 
-My research interests lie in trustworthy machine learning (interpretability, robustness, generalization) and trustworthy LLMs (truthfulness, reasoning).
+My research interests lie in neuro-symbolic learning, trustworthy machine learning (interpretability, robustness, generalization), and trustworthy large models (reasoning).
+*Please feel free to contact me if you’d like to chat on related topics.*
