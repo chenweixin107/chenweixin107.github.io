@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: PhD Candidate @ UIUC
+subtitle: Ph.D. Candidate @ UIUC
 
 profile:
   align: right
@@ -13,7 +13,7 @@ profile:
     <p>🖥︎ Github</p>
     <p>📖 Google Scholar</p>
 
-news: true  # includes a list of news items
+News: true  # includes a list of news items
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
