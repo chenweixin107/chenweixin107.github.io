@@ -112,6 +112,25 @@ blockquote {
   margin-right: 1rem;
 }
 
+// Profile social icons
+.profile .social {
+  .social-icon {
+    font-size: 2rem;
+    a {
+      margin: 0 0.5rem;
+      i::before {
+        color: var(--global-text-color);
+        transition-property: all 0.2s ease-in-out;
+      }
+      &:hover {
+        i::before {
+          color: var(--global-theme-color);
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
