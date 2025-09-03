@@ -10,7 +10,7 @@ cv_pdf: cv_weixinchen.pdf
 
 <!--  ---
 layout: base
-abbr: CV
+abbr: Curriculum Vitáe
 title: Curriculum Vitáe
 description: You may preview my CV online or download it <a href="/assets/pdf/cv_weixinchen.pdf" target="_blank">here</a>.
 permalink: /cv/
