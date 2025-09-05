@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  Reading Notes on Elements of Causal Inference
-date: 2025-09-05 7:30:00
-tags: notes
+title: Reading Notes on Elements of Causal Inference
+date: 2025-09-05 07:30:00
+description: Personal reading notes and key insights from Elements of Causal Inference by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf
+tags: [notes, causal inference, machine learning]
 ---
 * TOC
 {:toc}
