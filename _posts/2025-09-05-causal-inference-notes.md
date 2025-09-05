@@ -3,8 +3,15 @@ layout: post
 title: Reading Notes on Elements of Causal Inference
 date: 2025-09-05 07:30:00
 description: Personal reading notes and key insights from Elements of Causal Inference by Jonas Peters, Dominik Janzing, and Bernhard Schölkopf
-tags: [notes, causal inference, machine learning]
+tags: [notes, causality]
+toc: true
 ---
+
+## Table of Contents
+{:.no_toc}
+
+* TOC
+{:toc}
 
 ## Preface
 
@@ -34,7 +41,7 @@ This note reflects my personal understanding of *Elements of Causal Inference* b
 
 > Correlation does not imply causation.
 
-If X is correlated with Y, there might not be a **direct** causal relationship between X and Y. Instead,
+If $$X$$ is correlated with $$Y$$, there might not be a **direct** causal relationship between X and Y. Instead,
 
 > The dependency between X and Y admits several causal explanations.
 
