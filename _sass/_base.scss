@@ -54,11 +54,10 @@ figure, img {
 }
 
 blockquote {
-  background: var(--global-bg-color);
+  background: #f8f9fa; /* Light grey background */
   border-left: 2px solid var(--global-theme-color);
-  margin: 1.5em 10px;
-  padding: 0.1em 5px;
-  color: #666666; /* Grey color for quoted text */
+  margin: 1em 5px;
+  padding: 0.25em 8px;
   font-size: 1rem;
 }
 
@@ -683,7 +682,6 @@ html.transition *:after {
     blockquote {
       border-left: 5px solid var(--global-theme-color);
       padding: 8px;
-      color: #666666; /* Grey color for quoted text */
     }
   }
 }
