@@ -79,7 +79,7 @@ This is because the causal model can not only be used to infer joint distributio
 
 Suppose we have estimated the joint density $$p(a,t)$$ of the altitude $$A$$ and the average annual temperature $$T$$ of a sample of cities in some country.
 
-How can we utilize this principle to decide which of the two structures—$$T \to A$$ and $$A \to T$$—is the causal one? That is, which of the two factorizations—$$p(a,t) = p(a|t)p(t)$$ and $$p(a,t) = p(t|a)p(a)$$—is meaningful?
+How can we utilize this principle to decide which of the two structures—$$T \to A$$ and $$A \to T$$—is the causal one? That is, which of the two factorizations—$$p(a,t) = p(a\mid t)p(t)$$ and $$p(a,t) = p(t\mid a)p(a)$$—is meaningful?
 
 <u>Approach 1:</u> Do interventions
 Intervening on $$A$$ changes $$T$$, while intervening on $$T$$ does not change $$A$$. Hence, $$A \to T$$ is the causal one.
@@ -182,7 +182,7 @@ SSL refers to learning with labeled data $$(x,y)$$ and unlabeled data $$x$$. **S
 
 ### Covariate Shift
 
-Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y|X}$$ remains the same. This scenario is only justified when $$X \to Y$$.
+Covariate shift refers to the scenario where $$P_X$$ is changed while $$P_{Y|X}$$ remains the same. **This scenario is only justified when $$X \to Y$$.**
 
 
 
