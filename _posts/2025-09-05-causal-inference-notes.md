@@ -46,7 +46,7 @@ If $$X$$ is correlated with $$Y$$, there might not be a **direct** causal relati
 > The dependency between X and Y admits several causal explanations.
 
 One of my favorite examples is:
-{% include figure.html path="assets/img/causal_inference_notes/1.jpg" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/1.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 From this example, we can see that:
 
