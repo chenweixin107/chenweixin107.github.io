@@ -57,7 +57,7 @@ blockquote {
   background: var(--global-bg-color);
   border-left: 2px solid var(--global-theme-color);
   margin: 1.5em 10px;
-  padding: 0.01em 10px;
+  padding: 0.1em 5px;
   color: #666666; /* Grey color for quoted text */
   font-size: 1rem;
 }
@@ -683,6 +683,7 @@ html.transition *:after {
     blockquote {
       border-left: 5px solid var(--global-theme-color);
       padding: 8px;
+      color: #666666; /* Grey color for quoted text */
     }
   }
 }
