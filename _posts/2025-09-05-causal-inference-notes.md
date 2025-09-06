@@ -201,13 +201,13 @@ Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y
 
 - In the first three cases, **given $$i_k$$, $$i_{k-1}$$ and $$i_{k+1}$$ will be conditionally independent**. Therefore, if we want to block $$i_{k-1}$$ and $$i_{k+1}$$, making them independent, then we need to put $$i_k$$ into $$S$$. An ~example~ for the third case is:
 
-| $$i_{k-1}$$       | $$i_{k}$$        | $$i_{k+1}$$                   |
+| $$i_{k-1}$$      | $$i_{k}$$      | $$i_{k+1}$$                 |
 | ---------------- | -------------- | --------------------------- |
 | The road is wet. | It is raining. | People are using umbrellas. |
 
 - In the last case, **$$i_{k-1}$$ and $$i_{k+1}$$ are originally independent. Given $$i_k$$, however, $$i_{k-1}$$ and $$i_{k+1}$$ will be dependent.** Therefore, if we want to block $$i_{k-1}$$ and $$i_{k+1}$$, making them independent, then we cannot put $$i_k$$ into $$S$$. An ~example~ for the last case is:
 
-| $$i_{k-1}$$      | $$i_{k}$$          | $$i_{k+1}$$                  |
+| $$i_{k-1}$$    | $$i_{k}$$        | $$i_{k+1}$$                |
 | -------------- | ---------------- | -------------------------- |
 | It is raining. | The road is wet. | The water truck passes by. |
 
