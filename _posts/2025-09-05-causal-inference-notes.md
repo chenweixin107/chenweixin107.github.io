@@ -199,13 +199,13 @@ Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y
 
 *How to decide when $$i_k$$ should (not) be put in $$S$$?*
 
-- In the first three cases, **given $$i_k$$, $$i_{k-1}$$ and $$i_{k+1}$$ will be conditionally independent**. Therefore, if we want to block $$i_{k-1}$$ and $$i_{k+1}$$, making them independent, then we need to put $$i_k$$ into $$S$$. An ~example~ for the third case is:
+- In the first three cases, **given $$i_k$$, $$i_{k-1}$$ and $$i_{k+1}$$ will be conditionally independent**. Therefore, if we want to block $$i_{k-1}$$ and $$i_{k+1}$$, making them independent, then we need to put $$i_k$$ into $$S$$. An <u>example</u> for the third case is:
 
 | $$i_{k-1}$$      | $$i_{k}$$      | $$i_{k+1}$$                 |
 | ---------------- | -------------- | --------------------------- |
 | The road is wet. | It is raining. | People are using umbrellas. |
 
-- In the last case, **$$i_{k-1}$$ and $$i_{k+1}$$ are originally independent. Given $$i_k$$, however, $$i_{k-1}$$ and $$i_{k+1}$$ will be dependent.** Therefore, if we want to block $$i_{k-1}$$ and $$i_{k+1}$$, making them independent, then we cannot put $$i_k$$ into $$S$$. An ~example~ for the last case is:
+- In the last case, **$$i_{k-1}$$ and $$i_{k+1}$$ are originally independent. Given $$i_k$$, however, $$i_{k-1}$$ and $$i_{k+1}$$ will be dependent.** Therefore, if we want to block $$i_{k-1}$$ and $$i_{k+1}$$, making them independent, then we cannot put $$i_k$$ into $$S$$. An <u>example</u> for the last case is:
 
 | $$i_{k-1}$$    | $$i_{k}$$        | $$i_{k+1}$$                |
 | -------------- | ---------------- | -------------------------- |
@@ -226,7 +226,7 @@ SCM = Structural equations + Jointly independent noise distributions
 
 This proposition shows that: **An SCM entails a joint distribution**.
 
-<u>Proof sketch:</u> It is easy to see that, by substituting variables in an appropriate order, we can finally obtain $$X_j = g_j(noise variables of X_j's ancestors)$$. That is, $$X_j$$ is a function of noise variables. By applying the transformation of densities, we can obtain $$p_X$$ from $$p_N$$.
+<u>Proof sketch:</u> It is easy to see that, by substituting variables in an appropriate order, we can finally obtain $$X_j = g_j(\text{noise variables of} X_j\text{'s ancestors})$$. That is, $$X_j$$ is a function of noise variables. By applying the transformation of densities, we can obtain $$p_X$$ from $$p_N$$.
 
 <u>Remark:</u>  **One SCM** gives you **one joint distribution**. But, **one joint distribution** may be compatible with **many SCMs**, especially if you allow complex or complete graphs.
 This reflects a common theme in causality: The **forward process** (SCM → distribution) is **deterministic**. The **inverse problem** (distribution → SCM) is **non-identifiable** without extra assumptions (like sparsity, acyclicity, additive noise, etc.).
@@ -251,10 +251,10 @@ This reflects a common theme in causality: The **forward process** (SCM → dist
 
 <u>Remarks:</u>
 
-- These four arguments are equivalent, all of them pointing to one fact—whether there is a real value of X that can affect Y. What differs is that the first three arguments use the language of $$\exists$$, while the last argument uses the language of $$\forall$$.
-- If there is a directed path from X to Y, then in terms of the graph terminology, X is called an **ancestor** of Y; and in terms of the causal learning, X is called a **cause** of Y.
-- If there is a directed edge from X to Y, then in terms of the graph terminology, X is called a **parent** of Y; and in terms of the causal learning, X is called a **direct cause** of Y.
-- However, the fact that X is a cause of Y, i.e., X is an ancestor of Y, i.e., there is a directed path from X to Y, **does not necessarily mean there is a total causal effect from X to Y**. See the following proposition.
+- These four arguments are equivalent, all of them pointing to one fact—whether there is a real value of $$X$$ that can affect $$Y$$. What differs is that the first three arguments use the language of $$\exists$$, while the last argument uses the language of $$\forall$$.
+- If there is a directed path from $$X$$ to $$Y$$, then in terms of the graph terminology, $$X$$ is called an **ancestor** of $$Y$$; and in terms of the causal learning, $$X$$ is called a **cause** of $$Y$$.
+- If there is a directed edge from $$X$$ to $$Y$$, then in terms of the graph terminology, $$X$$ is called a **parent** of $$Y$$; and in terms of the causal learning, $$X$$ is called a **direct cause** of $$Y$$.
+- However, the fact that $$X$$ is a cause of $$Y$$, i.e., $$X$$ is an ancestor of $$Y$$, i.e., there is a directed path from $$X$$ to $$Y$$, **does not necessarily mean there is a total causal effect from $$X$$ to $$Y$$**. See the following proposition.
 
 <img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134751497.png" alt="image-20250905134751497" style="zoom:33%;" />
 This is because a system can be constructed in such a way that the *positive and negative effects cancel out*; thus, the total causal effect is 0, and there is no total causal effect.
@@ -266,7 +266,7 @@ Randomized trials refer to the experimental setup where each patient is given a 
 Randomized trials can be seen as a mathematical construct for **interventions**.
 In theory, in all treatment groups, any factor (e.g., age) other than the treatment itself has the *same* distribution across the groups.
 In practice, in all treatment groups, any factor (e.g., age) other than the treatment itself has a *similar* distribution across the groups.
-The benefit of using randomized trials is that we can estimate the **average causal effect (ACE) for binary variables**—E[Y∣do(X=1)]−E[Y∣do(X=0)]—directly by comparing outcomes between groups.
+The benefit of using randomized trials is that we can estimate the **average causal effect (ACE) for binary variables**—$$\mathbb{E}[Y\mid do(X=1)]−\mathbb{E}[Y\mid do(X=0)]$$—directly by comparing outcomes between groups.
 
 
 
