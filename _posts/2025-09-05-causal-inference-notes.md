@@ -235,8 +235,8 @@ This reflects a common theme in causality: The **forward process** (SCM → dist
 ### Interventions
 
 **Definition**.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134525680.png" alt="image-20250905134525680" style="zoom:33%;" />
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134549975.png" alt="image-20250905134549975" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/16.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/17.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 <u>Remarks:</u>
 
@@ -247,8 +247,8 @@ This reflects a common theme in causality: The **forward process** (SCM → dist
 
 
 **Total causal effect**.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134644124.png" alt="image-20250905134644124" style="zoom:33%;" />
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134704350.png" alt="image-20250905134704350" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/18.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/19.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 <u>Remarks:</u>
 
@@ -257,7 +257,7 @@ This reflects a common theme in causality: The **forward process** (SCM → dist
 - If there is a directed edge from $$X$$ to $$Y$$, then in terms of the graph terminology, $$X$$ is called a **parent** of $$Y$$; and in terms of the causal learning, $$X$$ is called a **direct cause** of $$Y$$.
 - However, the fact that $$X$$ is a cause of $$Y$$, i.e., $$X$$ is an ancestor of $$Y$$, i.e., there is a directed path from $$X$$ to $$Y$$, **does not necessarily mean there is a total causal effect from $$X$$ to $$Y$$**. See the following proposition.
 
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134751497.png" alt="image-20250905134751497" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/20.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 This is because a system can be constructed in such a way that the *positive and negative effects cancel out*; thus, the total causal effect is 0, and there is no total causal effect.
 
 
@@ -272,7 +272,7 @@ The benefit of using randomized trials is that we can estimate the **average cau
 
 
 **Simpson’s paradox**.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134833661.png" alt="image-20250905134833661" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/21.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 <u>Analysis:</u> Larger stones are more severe than small stones, and treatment had to deal with many more of these difficult cases (even though the total number of patients assigned to $$a$$ and $$b$$ is equal). This is why treatment $$a$$ can look worse than $$b$$ on the full population but better in both subgroups.
 
@@ -286,30 +286,30 @@ Conditioning on $$X$$ will affect the distributions of all variables that are **
 <u>When does intervention = conditioning:</u>
 Intervention is the same as conditioning for variables that **do not have any parents**. Why?
 Using the principle that mechanisms of generating $$X_j$$ are invariant under interventions on $$X_k$$, we have
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134942101.png" alt="image-20250905134942101" style="zoom:33%;" />
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135001411.png" alt="image-20250905135001411" style="zoom:33%;" />
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135021991.png" alt="image-20250905135021991" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/22.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/23.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/24.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 
 <u>When does intervention != conditioning:</u>
 Intervention is not the same as conditioning when there exists a **confounder**. Why?
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135102651.png" alt="image-20250905135102651" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/25.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 In this three-node example, intervention distribution and conditional distribution are computed as follows.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135122818.png" alt="image-20250905135122818" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/26.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 That is, they only differ in the first term. And this difference originates from the existence of $$T$$’s parent, the confounder, $$Z$$. In this case, where the intervention distribution is not the same as the conditional distribution, we say the causal effect from $$T$$ to $$R$$ is *confounded*.
 
 <u>How to transfer intervention to conditioning:</u> 
 Introduce intervention variables.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135519886.png" alt="image-20250905135519886" style="zoom:33%;" />
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135538725.png" alt="image-20250905135538725" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/27.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/28.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 
 **Computing interventional probabilities.**
 
 **Do-calculus** consists of three rules that convert the computation of interventional probabilities into the computation of observational probabilities.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905141330525.png" alt="image-20250905141330525" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/29.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### Counterfactuals
 
@@ -328,8 +328,8 @@ Introduce intervention variables.
 ### Markov property, faithfulness, and causal minimality
 
 **Definition**.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135250556.png" alt="image-20250905135250556" style="zoom:33%;" />
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135306530.png" alt="image-20250905135306530" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/30.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/31.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 An intuitive understanding of why the three statements are equivalent: This is because they all point to the same thing, i.e., *the variable distributions are built following the graph structure*. Specifically, if $$A_{1:n}$$ are parents of $$B$$ in the graph, then the distribution of $$B$$ should be constructed upon those of its parents. Recall the structural equation in SCM.
 
 > A distribution entailed from an SCM is Markovian with respect to the graph of the SCM.
@@ -339,8 +339,8 @@ On a high level, **as long as the variable distributions are constructed followi
 
 
 **Markov equivalence**.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135343408.png" alt="image-20250905135343408" style="zoom:33%;" />
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905135357781.png" style="zoom:33%;" /><!-- {"width":553} -->
+{% include figure.html path="assets/img/causal_inference_notes/32.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/33.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 In summary, if two DAGs have the same skeleton and the same v-structures, then they have the same d-separations. If they have the same d-separations, then they are Markov equivalent.
 
 *Same skeleton + v-structures -> Same d-separations -> Markov equivalence*
