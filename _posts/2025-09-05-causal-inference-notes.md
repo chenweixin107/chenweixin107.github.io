@@ -182,7 +182,7 @@ SSL refers to learning with labeled data $$(x,y)$$ and unlabeled data $$x$$. **S
 
 ### Covariate Shift
 
-Covariate shift refers to the scenario where $$P_X$$ is changed while $$P_{Y|X}$$ remains the same. **This scenario is only justified when $$X \to Y$$.**
+Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y\mid X}$$ remains the same. **This scenario is only justified when $$X \to Y$$.**
 
 
 
