@@ -314,7 +314,7 @@ Introduce intervention variables.
 
 **Definition**.
 
-> A counterfactual statement corresponds to updating the noise distributions of an SCM (by **conditioning**)—$$P_{N | X_{1:j}=x}$$—and then performing an **intervention**.
+> A counterfactual statement corresponds to updating the noise distributions of an SCM (by **conditioning**)—$$P_{N \mid X_{1:j}=x}$$—and then performing an **intervention**.
 
 <u>Remarks:</u>
 
