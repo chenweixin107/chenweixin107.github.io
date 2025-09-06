@@ -89,6 +89,7 @@ Intervening on $$A$$ changes $$T$$, while intervening on $$T$$ does not change $
 Changing $$p(a)$$ from that in China to that in the US does not influence $$p(t|a)$$. Hence, $$p(a,t) = p(t|a)p(a)$$ is the meaningful one.
 
 > (2) Given any mechanism, the noise is independent of the cause variables.
+
 > (3) Noises for different mechanisms are **jointly independent**.
 
 Moreover, we will know in Section 6 that:
