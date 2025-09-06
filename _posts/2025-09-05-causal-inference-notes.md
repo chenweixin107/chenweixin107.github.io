@@ -133,7 +133,7 @@ Typically, the counterfactual distribution is computed **after** certain observa
 - **Condition on observations** to update the distributions over noise variables;
 - **Do interventions.**
 
-Finally, the counterfactual distribution looks like $$P^{\mathcal{C} | B=1, T=1; do(T:=0)}$$.
+Finally, the counterfactual distribution looks like $$P^{\mathcal{C} \mid B=1, T=1; do(T:=0)}$$.
 
 
 
