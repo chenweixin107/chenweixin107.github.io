@@ -55,9 +55,10 @@ From this example, we can see that:
 - $$X$$ and $$Y$$ become **independent** if we condition on $$Z$$ in the right-hand figure, because the image and the label share no information that is not contained in the intention.
 
 In fact, the following principle guarantees the existence of a causal explanation.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905132717360.png" alt="image-20250905132717360" style="zoom: 33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/2.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
-More specifically, borrowing concepts from Section 6, we have:<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905132948753.png" alt="image-20250905132948753" style="zoom:33%;" />
+More specifically, borrowing concepts from Section 6, we have:
+{% include figure.html path="assets/img/causal_inference_notes/3.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 That is, if $$X$$ and $$Y$$ are dependent, then on the path between $$X$$ and $$Y$$, there cannot be a collider. Consequently, the path must be one of the forms, which validates the existence of $$Z$$.
 
