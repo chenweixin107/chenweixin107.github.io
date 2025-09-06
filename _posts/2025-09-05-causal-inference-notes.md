@@ -182,7 +182,7 @@ SSL refers to learning with labeled data $$(x,y)$$ and unlabeled data $$x$$. **S
 
 ### Covariate Shift
 
-Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y|X}$$ remains the same. **This scenario is only justified when $$X \to Y$$.**
+Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y|X}$$ remains the same. This scenario is only justified when $$X \to Y$$.
 
 
 
@@ -359,7 +359,7 @@ SCMs contain strictly more information than causal graphical models. That’s wh
 
 Please cite this work as:
 
-**Chen, Weixin.** *Reading Notes on "Elements of Causal Inference"*. Personal Blog (September 2025). [https://chenweixin107.github.io/posts/2025-09-01-causal-inference-notes/](https://chenweixin107.github.io/posts/2025-09-01-causal-inference-notes/)
+**Chen, Weixin.** *Reading Notes on "Elements of Causal Inference"*. Personal Blog (September 2025). [https://chenweixin107.github.io/2025/09/05/causal-inference-notes.html](https://chenweixin107.github.io/2025/09/05/causal-inference-notes.html)
 
 Or use the BibTeX citation:
 
@@ -370,6 +370,6 @@ Or use the BibTeX citation:
   journal = {chenweixin107.github.io},
   year    = {2025},
   month   = {September},
-  url     = {https://chenweixin107.github.io/posts/2025-09-01-causal-inference-notes/}
+  url     = {https://chenweixin107.github.io/2025/09/05/causal-inference-notes.html}
 }
 ```
