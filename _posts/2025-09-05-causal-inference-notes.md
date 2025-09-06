@@ -364,7 +364,9 @@ SCMs contain strictly more information than causal graphical models. That’s wh
 
 Please cite this work as:
 
+```
 **Chen, Weixin.** *Reading Notes on "Elements of Causal Inference"*. Personal Blog (September 2025). [https://chenweixin107.github.io/2025/09/05/causal-inference-notes.html](https://chenweixin107.github.io/2025/09/05/causal-inference-notes.html)
+```
 
 Or use the BibTeX citation:
 
