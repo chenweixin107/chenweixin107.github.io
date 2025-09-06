@@ -58,7 +58,8 @@ blockquote {
   border-left: 2px solid var(--global-theme-color);
   margin: 1.5em 10px;
   padding: 0.5em 10px;
-  // font-size: 1.2rem;
+  color: #666666; /* Grey color for quoted text */
+  font-size: 1rem;
 }
 
 // Math
