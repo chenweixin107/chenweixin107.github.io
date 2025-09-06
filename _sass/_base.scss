@@ -8,12 +8,6 @@ p, h1, h2, h3, h4, h5, h6, em, div, li, span, strong {
   color: var(--global-text-color);
 }
 
-// Make all headings bold with proper spacing
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
