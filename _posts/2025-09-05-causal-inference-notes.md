@@ -226,7 +226,7 @@ SCM = Structural equations + Jointly independent noise distributions
 
 This proposition shows that: **An SCM entails a joint distribution**.
 
-<u>Proof sketch:</u> It is easy to see that, by substituting variables in an appropriate order, we can finally obtain $$X_j = g_j(\text{noise variables of} X_j\text{'s ancestors})$$. That is, $$X_j$$ is a function of noise variables. By applying the transformation of densities, we can obtain $$p_X$$ from $$p_N$$.
+<u>Proof sketch:</u> It is easy to see that, by substituting variables in an appropriate order, we can finally obtain $$X_j = g_j(\text{noise variables of } X_j\text{'s ancestors})$$. That is, $$X_j$$ is a function of noise variables. By applying the transformation of densities, we can obtain $$p_X$$ from $$p_N$$.
 
 <u>Remark:</u>  **One SCM** gives you **one joint distribution**. But, **one joint distribution** may be compatible with **many SCMs**, especially if you allow complex or complete graphs.
 This reflects a common theme in causality: The **forward process** (SCM → distribution) is **deterministic**. The **inverse problem** (distribution → SCM) is **non-identifiable** without extra assumptions (like sparsity, acyclicity, additive noise, etc.).
