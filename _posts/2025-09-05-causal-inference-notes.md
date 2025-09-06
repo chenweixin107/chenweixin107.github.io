@@ -162,10 +162,10 @@ Structure identifiability tells us that under certain assumptions, only one of t
 <u>Goal:</u> Decide the causal model is $$Y = f_Y(X) + N_Y$$ or $$X = f_X(Y) + N_X$$.
 
  <u>Approach 1:</u> Independence test on residuals
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134002637.png" alt="image-20250905134002637" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/10.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 Below is an example:
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134029673.png" alt="image-20250905134029673" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/11.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 <u>Approach 2:</u> Maximum likelihood-based approach~
 
@@ -196,7 +196,7 @@ Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y
 - An (undirected) **path** in $$\mathcal{G}$$ is a sequence of (at least two) distinct vertices $$i_1, \ldots, i_m$$, such that there is an edge between $$i_k$$ and $$i_{k+1}$$ for all $$k=1, \ldots, m-1$$. If $$i_{k-1} \rightarrow i_k$$ and $$i_{k+1} \rightarrow i_k, i_k$$ is called a **collider** relative to this path. If $$i_k \rightarrow i_{k+1}$$ for all $$k$$, we speak of a **directed path** from $$i_1$$ to $$i_m$$ and call $$i_1$$ an **ancestor** of $$i_m$$ and $$i_m$$ a **descendant** of $$i_1$$.
 - $$\mathcal{G}$$ is called a directed acyclic graph (DAG) if all edges are directed and there is no directed cycle.
 - **d-separation**
-  <img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134229697.png" alt="image-20250905134229697" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/12.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 *How to decide when $$i_k$$ should (not) be put in $$S$$?*
 
@@ -215,15 +215,15 @@ Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y
 ### Structural causal models
 
 **Definition**.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134322238.png" alt="image-20250905134322238" style="zoom:33%;" />
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134342929.png" alt="image-20250905134342929" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/13.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/14.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 SCM = Structural equations + Jointly independent noise distributions
 
 
 
 **Properties**.
-<img src="/Users/weixinc2/Library/Application Support/typora-user-images/image-20250905134404768.png" alt="image-20250905134404768" style="zoom:33%;" />
+{% include figure.html path="assets/img/causal_inference_notes/15.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 This proposition shows that: **An SCM entails a joint distribution**.
 
