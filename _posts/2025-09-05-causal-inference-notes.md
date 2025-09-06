@@ -178,12 +178,12 @@ Below is an example:
 
 ### Semi-Supervised Learning (SSL)
 
-SSL refers to learning with labeled data $$(x,y)$$ and unlabeled data $$x$$. **SSL does not help (i.e., tells us nothing about $$\Pr_{Y|X}$$) when $$X \to Y$$.** This is because the unlabeled data $$x$$ reveals more information about $$\Pr_X$$; however, $$\Pr_X$$ and $$\Pr_{Y|X}$$ are independent when $$X \to Y$$. 
-*Note: It doesn't mean knowing more about $$\Pr_X$$ is helpless; on the contrary, it may help us to better estimate $$Y$$ in the sense of obtaining lower risk.*
+SSL refers to learning with labeled data $$(x,y)$$ and unlabeled data $$x$$. **SSL does not help (i.e., tells us nothing about $$P_{Y|X}$$) when $$X \to Y$$.** This is because the unlabeled data $$x$$ reveals more information about $$P_X$$; however, $$P_X$$ and $$P_{Y|X}$$ are independent when $$X \to Y$$. 
+*Note: It doesn't mean knowing more about $$P_X$$ is helpless; on the contrary, it may help us to better estimate $$Y$$ in the sense of obtaining lower risk.*
 
 ### Covariate Shift
 
-Covariate shift refers to the scenario where $$\Pr_X$$ is changed while $$\Pr_{Y\mid X}$$ remains the same. **This scenario is only justified when $$X \to Y$$.**
+Covariate shift refers to the scenario where $$P_X$$ is changed while $$P_{Y\mid X}$$ remains the same. **This scenario is only justified when $$X \to Y$$.**
 
 
 
@@ -279,27 +279,31 @@ The benefit of using randomized trials is that we can estimate the **average cau
 
 
 **Intervention vs. conditioning**. [Below incorporates some content from Section 6.6]
+
 <u>Difference between intervention and conditioning:</u>
+
 Intervention on $$X$$ will affect the distributions of all variables for which the **total causal effect from $$X$$ to them is nonzero**. The necessary (but not sufficient) condition for a nonzero total causal effect from $$X$$ to $$Y$$ is that there exists a directed path from $$X$$ to $$Y$$.
 Conditioning on $$X$$ will affect the distributions of all variables that are **correlated with $$X$$**.
 
 <u>When does intervention = conditioning:</u>
+
 Intervention is the same as conditioning for variables that **do not have any parents**. Why?
 Using the principle that mechanisms of generating $$X_j$$ are invariant under interventions on $$X_k$$, we have
 {% include figure.html path="assets/img/causal_inference_notes/22.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 {% include figure.html path="assets/img/causal_inference_notes/23.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-{% include figure.html path="assets/img/causal_inference_notes/24.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 
 <u>When does intervention != conditioning:</u>
+
 Intervention is not the same as conditioning when there exists a **confounder**. Why?
-{% include figure.html path="assets/img/causal_inference_notes/25.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/24.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 In this three-node example, intervention distribution and conditional distribution are computed as follows.
-{% include figure.html path="assets/img/causal_inference_notes/26.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/25.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 That is, they only differ in the first term. And this difference originates from the existence of $$T$$’s parent, the confounder, $$Z$$. In this case, where the intervention distribution is not the same as the conditional distribution, we say the causal effect from $$T$$ to $$R$$ is *confounded*.
 
 <u>How to transfer intervention to conditioning:</u> 
+
 Introduce intervention variables.
 {% include figure.html path="assets/img/causal_inference_notes/27.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 {% include figure.html path="assets/img/causal_inference_notes/28.png" class="img-fluid rounded z-depth-1" zoomable=true %}
