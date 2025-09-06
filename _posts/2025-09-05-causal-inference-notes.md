@@ -305,15 +305,15 @@ That is, they only differ in the first term. And this difference originates from
 <u>How to transfer intervention to conditioning:</u> 
 
 Introduce intervention variables.
+{% include figure.html path="assets/img/causal_inference_notes/26.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 {% include figure.html path="assets/img/causal_inference_notes/27.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-{% include figure.html path="assets/img/causal_inference_notes/28.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 
 
 **Computing interventional probabilities.**
 
 **Do-calculus** consists of three rules that convert the computation of interventional probabilities into the computation of observational probabilities.
-{% include figure.html path="assets/img/causal_inference_notes/29.png" class="img-fluid rounded z-depth-1" zoomable=true %}
+{% include figure.html path="assets/img/causal_inference_notes/28.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 
 ### Counterfactuals
 
@@ -332,8 +332,8 @@ Introduce intervention variables.
 ### Markov property, faithfulness, and causal minimality
 
 **Definition**.
+{% include figure.html path="assets/img/causal_inference_notes/29.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 {% include figure.html path="assets/img/causal_inference_notes/30.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-{% include figure.html path="assets/img/causal_inference_notes/31.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 An intuitive understanding of why the three statements are equivalent: This is because they all point to the same thing, i.e., *the variable distributions are built following the graph structure*. Specifically, if $$A_{1:n}$$ are parents of $$B$$ in the graph, then the distribution of $$B$$ should be constructed upon those of its parents. Recall the structural equation in SCM.
 
 > A distribution entailed from an SCM is Markovian with respect to the graph of the SCM.
@@ -343,8 +343,8 @@ On a high level, **as long as the variable distributions are constructed followi
 
 
 **Markov equivalence**.
+{% include figure.html path="assets/img/causal_inference_notes/31.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 {% include figure.html path="assets/img/causal_inference_notes/32.png" class="img-fluid rounded z-depth-1" zoomable=true %}
-{% include figure.html path="assets/img/causal_inference_notes/33.png" class="img-fluid rounded z-depth-1" zoomable=true %}
 In summary, if two DAGs have the same skeleton and the same v-structures, then they have the same d-separations. If they have the same d-separations, then they are Markov equivalent.
 
 *Same skeleton + v-structures -> Same d-separations -> Markov equivalence*
