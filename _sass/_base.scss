@@ -686,6 +686,12 @@ html.transition *:after {
   }
 }
 
+// Red text styling
+.red-text {
+  color: #dc3545 !important; /* Bootstrap red color */
+  font-weight: bold;
+}
+
 progress {
      /* Positioning */
      position: fixed;
