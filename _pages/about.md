@@ -30,5 +30,5 @@ I am a third-year PhD student in Computer Science at [University of Illinois Urb
 Before that, I obtained my M.E. degree in Artificial Intelligence from [Tsinghua University](https://www.tsinghua.edu.cn/en/) and B.S. degree in Mathematics from [Sun Yat-sen University](https://www.sysu.edu.cn/sysuen/).
 I also worked as a research intern at [CUHK-Shenzhen](https://www.cuhk.edu.cn/en), advised by Prof. [Baoyuan Wu](https://sites.google.com/site/baoyuanwu2015/), and at [UIUC](https://cs.illinois.edu/), advised by Prof. [Bo Li](https://aisecure.github.io/).
 
-My research interests lie in leveraging neuro-symbolic frameworks to advance trustworthiness in machine learning, with a focus on interpretability, robustness, generalization, and causality.
+My research interests lie in designing neuro-symbolic frameworks to advance trustworthiness in machine learning, with a focus on interpretability, robustness, generalization, and causality.
 *Please feel free to contact me if you’d like to chat on related topics:)*
