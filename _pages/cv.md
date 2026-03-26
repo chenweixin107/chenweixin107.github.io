@@ -5,7 +5,7 @@ title: Curriculum Vitáe
 nav_title: CV
 nav: true
 nav_order: 4
-cv_pdf: https://drive.google.com/file/d/1U7ljx7Ang-KtWuti7_VCj5Gb1zkjF4b3/view?usp=sharing
+cv_pdf: https://drive.google.com/file/d/1KmXT1wrrC7expKM2edfCgKXpHLFlaNwK/view?usp=sharing
 ---
 
 
